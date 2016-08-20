@@ -1,9 +1,9 @@
-ubuntu install:
+#Ubuntu basic install:
 
     install postgresql postfix-pgsql
 
 
-Postfix install:
+##Postfix install:
 
     select  "no configuration"
 
