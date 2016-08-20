@@ -20,10 +20,9 @@ pg_ident.conf
     mailmap         root                    mailuser
 
 ##Create user/role/database
-```
+
     sudo su - postgresl
     psql
-```
 
 
 ```sql
@@ -37,7 +36,8 @@ pg_ident.conf
 
 
 ##Create tables
-code (psql -U mailuser -d mailserver)
+
+    psql -U mailuser -d mailserver
 
 
 ```sql
@@ -75,7 +75,8 @@ CREATE TABLE virtual_users (
 ```
 
 ## create configuration file
-code (cd /etc/postfix)
+
+    cd /etc/postfix
 
 main.cf
 
@@ -105,8 +106,9 @@ dbname = mailserver
 query = SELECT 1 FROM virtual_domains WHERE domain_name='%s'
 ```
 ## restart service
-service postgresql restart
-sudo service postfix restart
+
+    sudo service postgresql restart
+    sudo service postfix restart
 
 ## test configuration
 ```
