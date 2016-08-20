@@ -1,0 +1,6 @@
+
+iuser = mailuser
+password = sqlblabla
+hosts = 127.0.0.1
+dbname = mailserver
+query = SELECT 1 FROM virtual_domains WHERE domain_name='%s'
