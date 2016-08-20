@@ -8,7 +8,8 @@
     select  "no configuration"
 
 
-postgresql configuration
+
+#postgresql configuration
 
 pg_hba.conf
 
