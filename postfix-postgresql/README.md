@@ -110,14 +110,7 @@ sudo service postfix restart
 
 ## test configuration
 
-code (
-postmap -q install.im pgsql:/etc/postfix/pgsql-virtual-mailbox-domains.cf
-
-)
-
-
-
-
+code ( postmap -q install.im pgsql:/etc/postfix/pgsql-virtual-mailbox-domains.cf)
 
 
 
