@@ -21,9 +21,8 @@ pg_ident.conf
 
 ##Create user/role/database
 
-
-code (sudo su - postgresl
-psql)
+    sudo su - postgresl
+    psql
 
 
 ```sql
@@ -110,8 +109,7 @@ sudo service postfix restart
 
 ## test configuration
 
-code ( postmap -q install.im pgsql:/etc/postfix/pgsql-virtual-mailbox-domains.cf)
-
+postmap -q install.im pgsql:/etc/postfix/pgsql-virtual-mailbox-domains.cf
 
 
 refernces:
